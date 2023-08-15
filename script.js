@@ -12,7 +12,7 @@ const generateCaptcha = () =>{
     const changeString = randomStringArray.map((char) =>
     Math.random() > 0.5 ? char.toUpperCase() : char
     );
-    captchaText = changeString.join("  ");
+    captchaText = changeString.join(" ");
     captchaTextBox.value = captchaText;
     console.log(captchaText);
 };
